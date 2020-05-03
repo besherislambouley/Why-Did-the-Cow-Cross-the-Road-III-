@@ -2,7 +2,7 @@
  * first number of unfriendly crossing pairs = the number of pairs li < lj && ri > rj && abs ( i - j ) > k 
  * lets consider we have an array A which initially filled with -1 
  * let id [i] is the postion of i in the second array
- * we iterate through the breeds in ascending order according to the li calculate the number of numbers is the interval [ id[i] , n ] such the A [j] != -1 && A[j] < i - k && A [j] > i + k , then update A [ id [i] ] with i 
+ * we iterate through the breeds in ascending order according to the li calculate the number of numbers is the interval [ id[i] , n ] such the A [j] != -1 && A[j] < i - k || A [j] > i + k , then update A [ id [i] ] with i 
  * without the updating the last task can be solved using merge sort tree , so we use a BIT in every node in the merge sort tree to apply the updating */
 #define fast ios_base::sync_with_stdio(0),cin.tie(0),cout.tie(0)
 #include <bits/stdc++.h>
